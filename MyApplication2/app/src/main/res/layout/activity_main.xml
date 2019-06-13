@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#E0F2F1"
+
+    tools:context="com.example.zorlu.myapplication.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:gravity="center_horizontal"
+        android:id="@+id/roomname"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#F44336"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_log"
+        android:name="com.example.zorlu.myapplication.Frame_Log"
+        ></fragment>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_info"
+        android:name="com.example.zorlu.myapplication.Frame_Info"
+        ></fragment>
+
+
+</RelativeLayout>
